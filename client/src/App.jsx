@@ -8,7 +8,7 @@ function App() {
           <a href="" className="navbar-brand">
             ADJ-DEMO
           </a>
-          <div className="collapse navbar-collapse">
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="navbar-item">
                 <a href="" className="nav-link active">Home</a>

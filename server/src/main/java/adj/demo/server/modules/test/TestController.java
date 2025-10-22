@@ -14,7 +14,7 @@ import java.util.HashMap;
 @RequestMapping("/adj-api/test")
 @CrossOrigin(origins = "*")
 public class TestController {
-    @GetMapping("")
+    @GetMapping
     public ResponseEntity<?> getResponse() {
         HashMap<String, Object> response = new HashMap<>();
         response.put("message", "Api Funcionando!");
