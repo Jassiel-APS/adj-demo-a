@@ -3,7 +3,7 @@ services:
     image: mysql:8
     container_name: adj-database
     environment:
-      MYSQL_ROOT_PASSWORD: L0lm3nxd
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: adj-demo
     ports:
       - "3307:3306"
@@ -39,7 +39,7 @@ services:
       DB_PORT: 3306
       DB_NAME: adj-demo
       DB_USER: root
-      DB_PASS: L0lm3nxd
+      DB_PASS: root
     container_name: adj-server
     ports:
       - "8081:8080"
@@ -47,11 +47,11 @@ services:
       - adj-net
     depends_on:
       - frontend
-    
 
 volumes:
   adj-volume:
     external: true
+
 
 networks:
   adj-net:

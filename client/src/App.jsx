@@ -1,29 +1,28 @@
-import TestController from "./modules/test/test.controller";
-
+import TestController from '../src/TestController.js';
 function App() {
+ 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
         <div className="container-fluid">
-          <a href="" className="navbar-brand">
-            ADJ-DEMO
-          </a>
+          <a href="" className="navbar-brand">ADJ-demo-a</a>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="navbar-item">
+              <li className="nav-item">
                 <a href="" className="nav-link active">Home</a>
-                </li>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+
       <div className="container mt-5">
         <h2>Inicio</h2>
         <hr />
-        <button onClick={() => TestController.callToAPI()} className="btn btn-success">Llamar a mi API</button>
+        <button onClick={()=> TestController.callToAPI()} className="btn btn-success">Llamar a mi API</button>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
